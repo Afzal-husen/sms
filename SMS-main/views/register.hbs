@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <title>Register or Signup</title>
+</head>
+
+<body>
+    <form action="/register" method="POST">
+        <h2>Register Form</h2>
+        <label for="Username">Username</label>
+        <input type="text" name="username" id="username" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+
+        <label for="Confirmpassword">Confirm-Password</label>
+        <input type="password" name="Confirmpassword" id="Confirmpassword" required>
+
+        <label for="firstname">First-Name</label>
+        <input type="text" name="firstname" id="firstname" required>
+
+        <label for="secondname">Second-Name</label>
+        <input type="text" name="secondname" id="secondname" required>
+
+        <div class="gender">
+
+            <input type="radio" name="gender" id="male">
+            <label for="gender">Male</label>
+
+            <input type="radio" name="gender" id="female">
+            <label for="gender">Female</label>
+        </div>
+
+        <label for="state">State</label>
+        <select id="state" name="state">
+            <option value="st" name="state">Select State</option>
+            <option value="st" name="state">Gujarat</option>
+            <option value="st" name="state">Haryana</option>
+            <option value="st" name="state">Jharkhand </option>
+            <option value="st" name="state">Madhya Pradesh</option>
+            <option value="st" name="state">Maharashtra </option>
+            <option value="st" name="state">Uttar Pradesh</option>
+
+        </select>
+
+        <input type="submit" class="btn" value="Register" >
+
+        <p>Already have an account? <a href="./login">Sign-In</a></p>
+    </form>
+
+</body>
+
+</html>
